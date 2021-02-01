@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/admin.css">
+    <link rel="stylesheet" href="css/game.css">
+    <script src="js/db.js"></script>
+    <script src="js/admin.js"></script>
+</head>
+
+<body>
+    <select id="games" size="2">
+        
+    </select>
+    <table id="events">
+        <thead>
+            <th>type</th>
+            <th>value</th>
+        </thead>
+    </table>
+    <div class="clearfix"></div>
+    <div class="selected_game_controls">
+        <div id="delete_button" class="button">Delete</div>
+
+    </div>
+    <div id="delete_all_button" class="button">Delete all</div>
+
+    <fieldset>
+        <legend>Settings</legend>
+        <label for="bg_color_input">background color</label>
+        <input type="color" id="bg_color_input">
+    </fieldset>
+
+</body>
+
+</html>

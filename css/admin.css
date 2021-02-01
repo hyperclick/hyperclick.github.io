@@ -1,0 +1,39 @@
+body {
+    /* text-align: start; */
+}
+
+#games {
+    float: left;
+}
+
+#events {
+    /* display: inline-block; */
+    float: left;
+}
+
+
+/* #events::after {
+    clear: both;
+} */
+
+.clearfix {
+    clear: both;
+    /* display: block; */
+    /* width: 100%; */
+}
+
+td,
+th,
+table {
+    border: 1px solid black;
+}
+
+.selected_game_controls {
+    /* position: relative;
+    width: fit-content; */
+    display: inline-block;
+}
+
+.button {
+    display: inline-block;
+}

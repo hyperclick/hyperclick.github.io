@@ -1,0 +1,151 @@
+* {
+    box-sizing: border-box;
+    margin: 0px;
+}
+
+.button {
+    height: 50px;
+    width: 100px;
+    width: fit-content;
+    border: 1px solid black;
+    text-align: center;
+    line-height: 50px;
+    padding-left: 10px;
+    padding-right: 10px;
+    background-color: white;
+    border-radius: 5px;
+}
+
+.button:hover {
+    background-color: aqua;
+    cursor: pointer;
+}
+
+#body {
+    position: relative;
+}
+
+#points {
+    position: absolute;
+    left: 5%;
+    top: 5%;
+}
+
+#word {
+    /* border: 1px solid; */
+    position: absolute;
+    top: 20%;
+    width: 80%;
+    left: 10%;
+    /* transform: translateX(-25%); */
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+#word .letter {
+    background-color: black;
+    margin-right: 2px;
+    user-select: none;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    -o-user-select: none;
+}
+
+#word .open {
+    background-color: white;
+}
+
+#word .space {
+    background-color: white;
+}
+
+.letter {
+    height: 50px;
+    width: 50px;
+    line-height: 50px;
+    text-align: center;
+    text-transform: capitalize;
+}
+
+#keyboard {
+    /* border: 1px solid; */
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 50%;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+
+/* #keyboard .letter:hover {
+    background-color: aqua;
+} */
+
+.key {
+    background-color: white;
+    /* border: 1px solid; */
+}
+
+#question {
+    /* border: 1px solid; */
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translateX(-50%);
+    font-weight: bold;
+    font-size: xx-large;
+    text-align: center;
+}
+
+.next_word.button {
+    position: absolute;
+    top: 90%;
+    right: 10%;
+}
+
+.admin.button {
+    position: absolute;
+    top: 90%;
+    left: 10%;
+    text-decoration: none;
+}
+
+a {
+    color: inherit;
+}
+
+#game_over {
+    position: absolute;
+    display: none;
+    height: 90%;
+    width: 100%;
+    text-align: center;
+    /* border: 1px solid black;   */
+    background-color: rgba(118, 165, 165, 0.5);
+    z-index: 1;
+}
+
+.win,
+.loose {
+    display: none;
+}
+
+#game_over .result {
+    /* margin: auto; */
+    font-size: 100px;
+    color: red;
+    transition: 1s;
+}
+
+#game_over .result.animation {
+    transform: translateY(200px);
+}
+
+img.loose {
+    float: right;
+}
